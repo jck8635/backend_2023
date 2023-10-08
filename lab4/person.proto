@@ -13,7 +13,7 @@ message Person {
 
     message PhoneNumber {
         optional string number = 1;
-        optional PhoneNumber type = 2 [default = HOME];
+        optional PhoneType type = 2 [default = HOME];
     }
 
     repeated PhoneNumber phones = 4;
